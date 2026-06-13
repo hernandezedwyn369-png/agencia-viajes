@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agencia de Viajes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>✈️ Agencia de Viajes Mundo Edwyn</h1>
+        <p>Descubre destinos increíbles</p>
+    </header>
+
+    <section class="formulario">
+
+        <h2>Registrar Destino</h2>
+
+        <input type="text" id="destino" placeholder="Destino">
+
+        <input type="text" id="pais" placeholder="País">
+
+        <input type="number" id="precio" placeholder="Costo">
+
+        <button id="btnGuardar" onclick="guardarDestino()">
+            Guardar Viaje
+        </button>
+
+    </section>
+
+    <section class="busqueda">
+
+        <input
+            type="text"
+            id="buscar"
+            placeholder="Buscar destino">
+
+        <button onclick="buscarDestino()">
+            Buscar
+        </button>
+
+        <button onclick="cargarDestinos()">
+            Ver Todos
+        </button>
+
+    </section>
+
+    <div id="contenedor"></div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
